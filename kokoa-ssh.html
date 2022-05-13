@@ -3,13 +3,18 @@
   <head>
     <title>TOYOTA Supra</title>
     <style>
+      @keyframes power {
+        from {
+          transform: rotateX(0);
+        }
+        to {
+          transform: rotateX(360deg);
+        }
+      }
       img {
         border: 10px solid black;
         border-radius: 50%;
-        transition: transform 2s ease-in-out;
-      }
-      img:hover {
-        transform: matrix(1, 2, 3, 4, 5, 6);
+        animation: power 5s ease-in-out infinite;
       }
     </style>
   </head>
