@@ -3,22 +3,35 @@
   <head>
     <title>TOYOTA Supra</title>
     <style>
-      @keyframes power {
-        from {
-          transform: rotateX(0);
-        }
-        to {
-          transform: rotateX(180deg) translateX(100px);
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (min-width: 601px) and (max-width: 1200px) {
+        div {
+          background-color: wheat;
         }
       }
-      img {
-        border: 10px solid black;
-        border-radius: 50%;
-        animation: power 5s ease-in-out infinite;
+      span {
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
-    <img src="img/logo.jpg" />
+    <div></div>
+    <span>Please fiip your phone :(</span>
   </body>
 </html>
