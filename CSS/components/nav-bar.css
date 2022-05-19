@@ -7,6 +7,7 @@
   padding: 20px 50px;
   /* padding 박스크기 */
   box-sizing: border-box;
+  /* 패딩을줘도 박스사이즈가 변경되지않게하는법 */
   border-top: 1px solid rgba(121, 121, 121, 0.3);
   /* boder 위아래 선주는거 */
 }
@@ -17,5 +18,39 @@
 }
 
 .nav__link {
+  position: relative;
+  /* position: absolute; 을 허용해주는법 */
   color: #2e363e;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  /* 아이콘 겹치게하는법 */
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__notification2 {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  /* 아이콘 겹치게하는법 */
+  left: 30px;
+  bottom: 30px;
 }
