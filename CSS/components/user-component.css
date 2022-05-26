@@ -21,7 +21,7 @@
 }
 
 .user-component__subtitle {
-  margin-top: 8px;
+  margin-bottom: 8px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -43,4 +43,9 @@
 
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
 }
