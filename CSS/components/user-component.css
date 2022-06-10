@@ -22,9 +22,13 @@
 }
 
 .user-component__subtitle {
-  margin-bottom: 8px;
+  margin-top: 8px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-cog {
+  color: tomato;
 }
 
 .user-component__avatar--xl {
