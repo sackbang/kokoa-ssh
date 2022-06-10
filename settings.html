@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Clone</title>
+    <title>Settings - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,54 +23,42 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html"> <i class="fa-solid fa-angle-left fa-3x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
         <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-        <span><i class="fa-solid fa-comment-dots fa-lg"></i></span>
-        <span><i class="fa-solid fa-music fa-lg"></i></span>
-        <span
-          ><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
-        ></span>
       </div>
     </header>
 
     <main class="main-screen">
-      <!--끝에 *숫자 하면 개수대로생성 -->
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="screenshots/car.jpg"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Mycar</h4>
-            <h6 class="user-component__subtitle">Toyota Supra</h6>
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Notices</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__time">21:22</span>
-          <div class="badge">1</div>
-        </div>
-      </div>
-    </main>
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="screenshots/gr86.jpg"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Mycar 2</h4>
-            <h6 class="user-component__subtitle">Toyota Supra red</h6>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-flask"></i>
+            <span>Kakao Lap</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__time">18:24</span>
-          <div class="badge">3</div>
-        </div>
-      </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+      </ul>
     </main>
 
     <nav class="nav">
@@ -83,7 +71,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <spnn class="nav__notification badge">1</spnn>
-            <i class="fa-solid fa-comment fa-2x"></i
+            <i class="fa-regular fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
